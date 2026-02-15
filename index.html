@@ -304,6 +304,24 @@
             display: block;
         }
 
+        /* Consultation Form Styling */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .responsive-iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 800px;
+            border: none;
+        }
+
         /* Footer */
         footer {
             background: var(--madiro-blue);
@@ -343,6 +361,8 @@
             .hero-image { display: none; }
             .about-grid { grid-template-columns: 1fr; }
             .timeline { grid-template-columns: 1fr; }
+            .nav-links { gap: 1rem; }
+            .nav-links a { font-size: 0.7rem; }
         }
     </style>
 </head>
@@ -354,11 +374,11 @@
             <a href="#about">About</a>
             <a href="#submissions">Portfolio</a>
             <a href="#cv">Expertise</a>
+            <a href="#consultation">Consultation</a>
             <a href="https://ndakira.net" target="_blank">Blog</a>
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
             <span class="hero-badge">AI in Global Health</span>
@@ -369,7 +389,6 @@
         <div class="hero-image"></div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
         <span class="section-label">Vision</span>
         <div class="about-grid">
@@ -400,7 +419,6 @@
         </div>
     </section>
 
-    <!-- COURSE -->
     <section>
         <div class="course-banner">
             <span class="section-label" style="color: var(--madiro-teal);">The Course</span>
@@ -419,7 +437,6 @@
         </div>
     </section>
 
-    <!-- SUBMISSIONS -->
     <section id="submissions">
         <div class="section-header">
             <span class="section-label">Evidence</span>
@@ -427,7 +444,6 @@
         </div>
         
         <div class="submissions-grid">
-            <!-- Week 1 -->
             <div class="card">
                 <div>
                     <span class="card-week">WEEK 01</span>
@@ -437,7 +453,6 @@
                 <a href="#" class="card-link">View submission</a>
             </div>
 
-            <!-- Week 2 -->
             <div class="card">
                 <div>
                     <span class="card-week">WEEK 02</span>
@@ -447,7 +462,6 @@
                 <a href="#" class="card-link">View submission</a>
             </div>
 
-            <!-- Week 3 -->
             <div class="card">
                 <div>
                     <span class="card-week">WEEK 03</span>
@@ -457,7 +471,6 @@
                 <a href="#" class="card-link">View submission</a>
             </div>
 
-            <!-- Week 4 -->
             <div class="card">
                 <div>
                     <span class="card-week">WEEK 04</span>
@@ -469,7 +482,6 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE/CV -->
     <section id="cv" style="background: #ffffff;">
         <div class="section-header">
             <span class="section-label">Curriculum</span>
@@ -507,6 +519,17 @@
         </div>
     </section>
 
+    <section id="consultation">
+        <div class="section-header">
+            <span class="section-label">Collaboration</span>
+            <h2 class="section-title">Contact for Consultation</h2>
+            <p style="margin-top: 1.5rem; color: var(--text-muted);">Interested in integrating AI into your health systems or discussing digital health strategy? Please fill out the form below.</p>
+        </div>
+        <div class="form-container">
+            <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScz9lTaPAhNGYRBIVyeVx0qhUOv6BO90InzvXpMNhiatKVvzA/viewform?embedded=true">Loading…</iframe>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-grid">
             <div>
@@ -518,12 +541,13 @@
                 <a href="#about">About</a>
                 <a href="#submissions">Portfolio</a>
                 <a href="#cv">Expertise</a>
+                <a href="#consultation">Consultation</a>
             </div>
             <div class="footer-links">
                 <h4 style="margin-bottom: 1.5rem; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">Connect</h4>
                 <a href="https://linkedin.com" target="_blank">LinkedIn</a>
                 <a href="https://ndakira.net" target="_blank">Blog</a>
-                <a href="#">Contact</a>
+                <a href="#consultation">Contact</a>
             </div>
         </div>
         <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.8rem; opacity: 0.5;">
